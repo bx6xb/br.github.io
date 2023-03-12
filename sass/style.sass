@@ -3,6 +3,13 @@ $light: "JosefinSans-Light"
 $bold: "JosefinSans-BoldItalic"
 $white: #fff
 $black: #000
+$orange: orange
+html::-webkit-scrollbar
+    width: 1.5vh
+html::-webkit-scrollbar-thumb
+    background-color: $orange
+html::-webkit-scrollbar-track 
+  background-color: #696969
 body 
     background-color: $black
     color: $white
@@ -27,6 +34,10 @@ nav
         height: 10vh
         margin: 1.5vh
         position: absolute
+        transition: .2s
+        &:hover
+            transform: scale(1.2)
+            
     .menu
         display: flex
         justify-content: center
@@ -35,13 +46,16 @@ nav
             text-decoration: none
         &-item
             padding: 2vh
-            color: $white
+            color: $orange
             font-size: 2.5vh
-            border-bottom: 0.1vh solid $white
+            border-bottom: 0.1vh solid $orange
             transition: .4s
+            &-selected
+                border-bottom: 0.1vh solid #696969
+                color: #696969
             &:hover
-                background-color: $white
-                color: $black
+                background-color: $orange
+                color: $white
 section
     position: relative
     display: flex
@@ -94,10 +108,16 @@ section
         background: url('../videos/playboi\ carti.gif') center center / cover no-repeat fixed
 #yeat
     background: url('../img/yeat.jpeg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/yeat.gif') center center / cover no-repeat fixed
 #pop-smoke
     background: url('../img/pop smoke.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/pop smoke.gif') center center / cover no-repeat fixed
 #scott
     background: url('../img/travis scott.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/travis scott.gif') center center / cover no-repeat fixed
 #drake
     background: url('../img/drake.jpg') center center / cover no-repeat fixed
 #lil-uzi
@@ -144,7 +164,7 @@ main
     table, tr, td
         border: 0.3vh solid $black
         font-size: 2.5vh
-    .albums
+    .profile
         width: 25%
         padding: 2vh
         text-align: center
@@ -152,14 +172,22 @@ main
         float: right
         background-color: $white
         color: $black
-        .table-name
+        &-header
             font-size: 4vh
-            margin: 3vh 0
-        &-rapper-name
-            font-size: 4vh
+            margin: 3vh 0 .1vh 0
         &-img
-            width: 40vh
-            margin-top: 2vh
+            width: 35vh
             border: 0.5vh solid $black
-        .table
-            width: 100%
+        &-albums
+            font-size: 3vh
+            border: 0.2vh solid $black
+            .album  
+                margin: 2vh
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .album-img
+                    width: 10vh
+                a
+                    color: $black
+
