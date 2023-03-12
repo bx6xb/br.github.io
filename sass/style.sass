@@ -50,6 +50,7 @@ nav
             font-size: 2.5vh
             border-bottom: 0.1vh solid $orange
             transition: .4s
+            white-space: nowrap
             &-selected
                 border-bottom: 0.1vh solid #696969
                 color: #696969
@@ -86,7 +87,7 @@ section
             width: 35vh
             height: 35vh
             border: 1vh solid $white
-            margin-right: 4vh
+            margin: 0 4vh
             transition: .3s
             &:hover
                 transform: scale(1.2)
@@ -120,8 +121,12 @@ section
         background: url('../videos/travis scott.gif') center center / cover no-repeat fixed
 #drake
     background: url('../img/drake.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/drake.gif') center center / cover no-repeat fixed
 #lil-uzi
     background: url('../img/lil uzi vert.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/lil uzi vert.gif') center center / cover no-repeat fixed
 footer
     height: 20vh
     display: flex
@@ -139,7 +144,7 @@ footer
             z-index: 1
             font-family: $bold
             font-size: 12vh
-            letter-spacing: 2vh
+            letter-spacing: 3vh
 main
     min-height: 100vh
     background-color: $white
@@ -186,6 +191,7 @@ main
                 display: flex
                 align-items: center
                 justify-content: space-between
+                flex-wrap: no-wrap
                 .album-img
                     width: 10vh
                 a
