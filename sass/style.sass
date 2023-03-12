@@ -2,8 +2,9 @@ $thin: "JosefinSans-Thin"
 $light: "JosefinSans-Light"
 $bold: "JosefinSans-BoldItalic"
 $white: #fff
+$black: #000
 body 
-    background-color: black
+    background-color: $black
     color: $white
 .shadow
     position: absolute
@@ -11,8 +12,11 @@ body
     height: 100vh
     top: 0
     left: 0
-    background-color: rgba(0, 0, 0, .5)
     z-index: 0
+    &-five
+        background-color: rgba(0, 0, 0, .5)
+    &-two
+        background-color: rgba(0, 0, 0, .25)
 nav
     position: fixed
     z-index: 2
@@ -37,7 +41,7 @@ nav
             transition: .4s
             &:hover
                 background-color: $white
-                color: black
+                color: $black
 section
     position: relative
     display: flex
@@ -86,6 +90,8 @@ section
         text-transform: uppercase
 #carti
     background: url('../img/playboi\ carti.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/playboi\ carti.gif') center center / cover no-repeat fixed
 #yeat
     background: url('../img/yeat.jpeg') center center / cover no-repeat fixed
 #pop-smoke
@@ -103,3 +109,57 @@ footer
     align-items: center
     img
         width: 30vh
+.rapper-page
+        height: 100vh
+        position: relative
+        display: flex
+        align-items: center
+        .header
+            text-align: center
+            z-index: 1
+            font-family: $bold
+            font-size: 12vh
+            letter-spacing: 2vh
+main
+    min-height: 100vh
+    background-color: $white
+    color: $black
+    position: relative
+    padding: 2vh
+    .text
+        font-size: 2vh
+        display: block
+        padding: 1vh
+        span
+            font-family: $bold
+            font-size: 3.5vh
+        &-header
+            margin-top: 3vh
+            font-size: 5vh
+            font-family: $light
+        img
+            float: left
+            width: 25vh
+            margin: 1.5vh
+    table, tr, td
+        border: 0.3vh solid $black
+        font-size: 2.5vh
+    .albums
+        width: 25%
+        padding: 2vh
+        text-align: center
+        font-family: $light
+        float: right
+        background-color: $white
+        color: $black
+        .table-name
+            font-size: 4vh
+            margin: 3vh 0
+        &-rapper-name
+            font-size: 4vh
+        &-img
+            width: 40vh
+            margin-top: 2vh
+            border: 0.5vh solid $black
+        .table
+            width: 100%
