@@ -22,11 +22,15 @@ body
     align-items: center
     background: url('../videos/rolling loud carti.gif') center center / cover no-repeat fixed
     .reg-header
-        font-size: 4vh
+        font-size: 6vh
         position: relative
         z-index: 1
+        text-align: center
         color: $white
         font-family: $light
+        transition: .3s
+        &:hover
+            letter-spacing: 3vh
 .shadow
     position: absolute
     width: 100%
@@ -190,6 +194,8 @@ main
             margin-top: 3vh
             font-size: 5vh
             font-family: $light
+            &:nth-child(1)
+                margin-top: 0
         img
             float: left
             width: 25vh
