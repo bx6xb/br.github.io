@@ -1,0 +1,228 @@
+html::-webkit-scrollbar
+    width: 15px
+html::-webkit-scrollbar-thumb
+    background-color: $orange
+html::-webkit-scrollbar-track 
+  background-color: $gray
+body 
+    background-color: $black
+    color: $white
+.registration-section
+    position: relative
+    height: 1000px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: url('../videos/rolling loud carti.gif') center center / cover no-repeat fixed
+    .reg-header
+        font-size: 40px
+        position: relative
+        z-index: 1
+        color: $white
+        font-family: $light
+.shadow
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 1
+    &-five
+        background-color: rgba(0, 0, 0, .5)
+    &-two
+        background-color: rgba(0, 0, 0, .25)
+header
+    position: fixed
+    width: 100%
+    z-index: 10
+nav
+    max-height: 200px
+    width: 100%
+.logo
+    height: 100px
+    transition: .2s
+    margin: 15px auto 15px auto
+    display: block
+    &:hover
+        transform: rotate(5deg)
+.menu
+    display: flex
+    list-style: none
+    justify-content: space-around
+    padding: 0
+    &-item 
+        width: 100%
+    &-link
+        width: 100%
+        display: block
+        text-align: center
+        text-decoration: none
+        font-size: 18px
+        color: $orange
+        padding: 25px
+        transition: .3s
+        border-bottom: 1px solid $orange
+        &:hover
+            background-color: $orange
+            color: $white
+        &-selected
+            border-bottom: 1px solid $white
+            color: $white
+.reg
+    font-size: 20px
+    position: relative
+    top: 20px
+    display: block
+    text-align: center
+    text-decoration: none
+    padding: 20px
+    color: $white
+    border: 3px solid $orange
+    border-radius: 100px
+    transition: .3s all
+    width: 70%
+    margin: 0 auto
+    &:hover
+        top: 10px
+        background-color: $orange
+section
+    position: relative
+    padding-top: 100px
+    height: 1080px
+    .pic
+        display: flex
+        align-items: center
+        height: 100%
+        width: 100%
+        a
+            display: block
+            width: 100%
+    .rapper-name
+        font-size: 90px
+        letter-spacing: 10px
+        text-align: center
+        text-decoration: none
+        color: $white
+        transition: .3s
+        display: block
+        margin-bottom: 150px
+        font-family: $thin
+        &:hover
+            transform: scale(1.2)
+    .rapper-img 
+        width: 100%
+        border: 10px solid $white   
+        transition: .3s
+        &:hover
+            transform: scale(1.2)
+    .rapper-desc
+        padding: 25px
+        font-size: 30px
+        color: $white
+        display: flex
+        height: 100%
+        align-items: center
+        .text
+            font-family: $light
+.container > .row
+    position: relative
+    z-index: 2
+.promo
+    padding-top: 400px
+    &-header
+        position: relative
+        z-index: 2
+        font-family: $bold
+        font-size: 120px
+        letter-spacing: 30px
+        text-align: center
+#index
+    background: url('../videos/index.gif') center center / cover no-repeat fixed
+#carti
+    background: url('../img/rappers\ background/playboi\ carti.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/playboi\ carti.gif') center center / cover no-repeat fixed
+#yeat
+    background: url('../img/rappers\ background/yeat.jpeg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/yeat.gif') center center / cover no-repeat fixed
+#pop-smoke
+    background: url('../img/rappers\ background/pop smoke.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/pop smoke.gif') center center / cover no-repeat fixed
+#scott
+    background: url('../img/rappers\ background/travis scott.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/travis scott.gif') center center / cover no-repeat fixed
+#drake
+    background: url('../img/rappers\ background/drake.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/drake.gif') center center / cover no-repeat fixed
+#lil-uzi
+    background: url('../img/rappers\ background/lil uzi vert.jpg') center center / cover no-repeat fixed
+    &-anim
+        background: url('../videos/lil uzi vert.gif') center center / cover no-repeat fixed
+footer
+    height: 200px
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        width: 300px
+.rapper-page
+    height: 1000px
+    position: relative
+    display: flex
+    align-items: center
+    .header
+        text-align: center
+        z-index: 1
+        font-family: $bold
+        font-size: 120px
+        letter-spacing: 30px
+main
+    min-height: 1000px
+    background-color: $white
+    color: $black
+    padding: 30px
+    .text
+        font-size: 20px
+        display: block
+        padding: 10px
+        span
+            font-family: $bold
+            font-size: 35px
+        &-header
+            margin-top: 30px
+            font-size: 50px
+            font-family: $light
+    table, tr, td
+        border: 3px solid $black
+        font-size: 25px
+    .profile
+        width: 100%
+        padding: 20px
+        text-align: center
+        font-family: $light
+        float: right
+        background-color: $white
+        color: $black
+        &-header
+            font-size: 40px
+            margin: 30px 0 1px 0
+        &-img
+            width: 350px
+            border: 5px solid $black
+        &-albums
+            font-size: 30px
+            border: 2px solid $black
+            .album  
+                margin: 20px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                flex-wrap: no-wrap
+                .album-img
+                    width: 100px
+                a
+                    color: $black
